@@ -1,0 +1,82 @@
+/*styles for the website theme*/
+
+@media (max-width: 767.98px) {
+    main.container {
+        padding-top: 0rem;
+    }
+    .container li {
+        font-size: 0.5rem;
+    }
+}
+
+#logo1 {
+    background-color: #FFCF00;
+    color: #000000;
+    border-bottom-color: #000000;
+    border-radius: 10px 0px 0px 0px;
+    border-bottom: .5rem solid;
+    padding-left: 1rem;
+    padding-right: .5rem;
+    padding-top: .5rem;
+}
+
+#logo2 {
+    background-color: #40617F;
+    color: #ffffff;
+    border-bottom-color: #000000;
+    border-radius: 0px 10px 0px 0px;
+    border-bottom: .5rem solid black;
+    padding-left: .5rem;
+    padding-right: 1rem;
+    padding-top: .5rem;
+}
+
+#headerTitle {
+    margin-bottom: 0.1em;
+    margin-top: 0.1em;
+}
+
+#subtitle {
+    margin-top: 0;
+    padding-left: 15px;
+    color: #FFCF00;
+}
+
+#sectionsNav {
+    padding-top: .1em;
+    margin-bottom: .1em;
+}
+
+#navMenu {
+    position: relative;
+}
+
+
+#myTab .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: #FFCF00;
+}
+
+#myTab a {
+    color: #FFCF00;
+}
+
+#eventTab {
+    font-size: .75rem;
+    font-weight: 800;
+}
+
+#eventTab .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: #FF993D;
+}
+
+#eventTab a {
+    color: #FF993D;
+}
+
+#sub-header-nav {
+    padding-top: 0;
+}
+
+#navBar {
+    padding-bottom: 0;
+}

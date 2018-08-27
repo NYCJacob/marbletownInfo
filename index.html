@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../favicon.ico">
+
+    <title>Marbletown Info</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet" />
+
+    <!--personal custom styles-->
+    <link href="css/custom.css" rel="stylesheet" />
+
+    <!--mapbox-->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.css' rel='stylesheet' />
+    <!--map.css is the css from the mapbox choropleth tutorial-->
+    <link href='css/map.css' rel='stylesheet' />
+
+</head>
+
+<body>
+
+<header>
+    <nav id="navBar" class="navbar navbar-light bg-light">
+        <h1 class="title" id="headerTitle"><span id="logo1">Marbletown</span><span id="logo2">info</span></h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sub-header-nav" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <nav id="sub-header-nav" class="collapse navbar navbar-expand-md">
+        <ul class="nav nav-pills nav-fill">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Interactive Zoning Map</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Census Data</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Town Board</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Event Law</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Begin page content -->
+<main role="main" class="container">
+    <div class="row">
+        <div id="mainCol" class="col">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Zoning</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#census" role="tab" aria-controls="profile" aria-selected="false">Census</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#tboard" role="tab" aria-controls="contact" aria-selected="false">Town Board</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="events-law" data-toggle="tab" href="#events" role="tab" aria-controls="contact" aria-selected="false">Event Law</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="tab-content" id="mainTab">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div id='mapGL'></div>
+                </div>
+                <div class="tab-pane fade" id="census" role="tabpanel" aria-labelledby="census-tab">
+
+                </div>
+                <div class="tab-pane fade" id="tboard" role="tabpaneltabpanel" aria-labelledby="town-board-tab">
+
+                </div>
+                <div class="tab-pane fade" id="events" role="tabpaneltabpanel" aria-labelledby="events-tab">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<!--<footer class="footer">-->
+    <!--<div class="container">-->
+        <!--<span class="text-muted">Stick</span>-->
+    <!--</div>-->
+<!--</footer>-->
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+<!--<script>window.jQuery || document.write('<script src="js/jquery-3.2.1.slim.js"><\/script>')</script>-->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<!--<script src="bootstrap-4.0.0-dist/js/bootstrap.js"></script>-->
+<!--custom javascript adapted from mapbox choropleth tutorial-->
+<script src="config/config.js"></script>
+<script src="js/mapboxgl.js"></script>
+<script async src="js/viewsLoader.js"></script>
+<script src="https://s3.amazonaws.com/embed.censusreporter.org/1.0/js/embed.chart.make.js"></script>
+
+</body>
+</html>
