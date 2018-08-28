@@ -1,5 +1,3 @@
-
-// mapboxgl.accessToken = 'pk.eyJ1IjoibnlqYWNvYiIsImEiOiJjamtmdWFpMXEwY2xlM3FwOWN5OTB6aXJ5In0.R5tLAwX-BMmPWmvpUD7Yuw';
 mapboxgl.accessToken = himitsu.mapboxAPI;
 
 const map = new mapboxgl.Map({
@@ -27,26 +25,16 @@ map.on('load', function () {
             "source-layer": "tmarble_shp-09wfzs",
             "paint":
                 [
-                "match",
-                ["get", "id"],
-                1,
-                [
                     "step",
-                    ["get", "id"],
-                    "hsl(122, 98%, 50%)",
-                    5,
-                    "#000000"
-                ],
-                [
-                    "interpolate",
-                    ["linear"],
-                    ["get", "id"],
-                    1,
-                    "hsl(0, 0%, 0%)",
-                    5,
-                    "#000000"
+                    ["get", "ACRES"],
+                    "#f7d98e",
+                    10,
+                    "#deac6a",
+                    25,
+                    "#a87540",
+                    100,
+                    "#a15123"
                 ]
-            ]
         }
     );
 
