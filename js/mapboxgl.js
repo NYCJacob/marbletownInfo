@@ -23,18 +23,21 @@ map.on('load', function () {
             "type": "fill",
             "source": "tmarble_shp-09wfzs",     // source: Name of a source description to be used for this layer.
             "source-layer": "tmarble_shp-09wfzs",
-            "paint":
-                [
-                    "step",
-                    ["get", "ACRES"],
-                    "#f7d98e",
-                    10,
-                    "#deac6a",
-                    25,
-                    "#a87540",
-                    100,
-                    "#a15123"
-                ]
+            "paint": {
+                //     "fill-color" :  [
+                //         "step",
+                //         ["get", "ACRES"],
+                //         "#f7d98e",
+                //         10,
+                //         "#deac6a",
+                //         25,
+                //         "#a87540",
+                //         100,
+                //         "#a15123"
+                //     ]
+                // }
+                "fill-opacity": .2
+            }
         }
     );
 
@@ -43,6 +46,7 @@ map.on('load', function () {
     var zones = ['A-2', 'A-3', 'A-4', 'B1', 'B-2', 'I-1', 'I-B', 'R-1', 'R-3', 'SR'];
     var colors = ['#CAE4BD', '#A8DB42', '#5C8A45', '#F1B6B6', '#F2CD9D', '#F3F35A', '#F3F3CC', '#C48F72'];
 
+    legend.innerHTML = "<p>Zone borders</p>"
     for (i = 0; i < zones.length; i++) {
         var zone = zones[i];
         var color = colors[i];
@@ -64,9 +68,10 @@ map.on('load', function () {
         });
 
         if (parcels.length > 0) {
-            document.getElementById('pd').innerHTML = '<h3><strong>' + parcels[0].properties.ParcelNumb + '</strong></h3><p><strong><em>' + " has " + parcels[0].properties.ACRES + '</strong> acres</em></p>';
+            document.getElementById('pd').innerHTML = '<p><strong>' + parcels[0].properties.ADDRESS_NU + ' ' +  parcels[0].properties.ADDRESS_NA + '</strong></p><p><strong><em>' + " has "
+                + parcels[0].properties.ACRES + '</strong> acres</em></p><br> Zoned ' + parcels[0].properties.ZONING;
         } else {
-            document.getElementById('pd').innerHTML = '<p>Hover over a state!</p>';
+            document.getElementById('pd').innerHTML = '<p>Hover over a parcel!</p>';
         }
     });
 
