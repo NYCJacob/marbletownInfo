@@ -4,7 +4,7 @@
 * Create a position for the map
 * on the page */
 #mapGL {
-    position: absolute;
+    position: relative;
     top: 0;
     bottom: 0;
     height: 75vh;
@@ -16,9 +16,9 @@
 * (info box and legend) will be displayed
 * on the page. */
 .map-overlay {
-    position: relative;
-    bottom: 0;
-    right: 0;
+    position: absolute;
+    top: 30vh;
+    height: 20vh;
     background: rgba(255, 255, 255, 0.8);
     margin-right: 0px;
     font-family: Arial, sans-serif;
@@ -33,8 +33,9 @@
 #features {
     top: 0;
     /*height: 100px;*/
-    margin-top: 1em;
+    margin-top: 5em;
     width: 20vw;
+    float: right;
 }
 
 #legend {
@@ -47,11 +48,58 @@
     font-size: .7rem;
 }
 
-.legend-key {
-    display: inline-block;
-    border-radius: 20%;
-    width: 10px;
-    height: 10px;
-    margin-right: 5px;
+/*.legend-key {*/
+    /*display: inline-block;*/
+    /*border-radius: 20%;*/
+    /*width: 10px;*/
+    /*height: 10px;*/
+    /*margin-right: 5px;*/
+/*}*/
+
+.zone-legend {
+    border: solid dimgrey;
 }
 
+.zone-legend p {
+    margin-bottom: .1rem;
+}
+
+.A2 {
+    background-color: rgb(202, 228, 189)
+}
+
+.A3 {
+    background-color: rgb(168, 219, 66)
+}
+
+.A4 {
+    background-color: rgb(92, 138, 69)
+}
+
+.B1 {
+    background-color: rgb(241, 182, 182)
+}
+
+.B2 {
+    background-color: rgb(242, 205, 157)
+}
+
+.IB {
+    background-color: rgb(243, 243, 204)
+}
+
+.I1 {
+    background-color: rgb(243, 243, 90)
+}
+
+.R1 {
+    background-color: rgb(196, 143, 114)
+}
+
+.R3 {
+
+}
+
+.SR {
+
+}

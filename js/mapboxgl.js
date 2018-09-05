@@ -46,22 +46,6 @@ map.on('load', function () {
     var zones = ['A-2', 'A-3', 'A-4', 'B1', 'B-2', 'I-1', 'I-B', 'R-1', 'R-3', 'SR'];
     var colors = ['#CAE4BD', '#A8DB42', '#5C8A45', '#F1B6B6', '#F2CD9D', '#F3F35A', '#F3F3CC', '#C48F72'];
 
-    legend.innerHTML = "<p>Zone borders</p>"
-    for (i = 0; i < zones.length; i++) {
-        var zone = zones[i];
-        var color = colors[i];
-        var item = document.createElement('div');
-        var key = document.createElement('span');
-        key.className = 'legend-key';
-        key.style.backgroundColor = color;
-
-        var value = document.createElement('span');
-        value.innerHTML = zone;
-        item.appendChild(key);
-        item.appendChild(value);
-        legend.appendChild(item);
-    }
-
     map.on('mousemove', function(e) {
         var parcels = map.queryRenderedFeatures(e.point, {
             layers: ['tmarble-parcels-shp']
