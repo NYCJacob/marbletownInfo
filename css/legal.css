@@ -1,0 +1,79 @@
+#draft-law .caption {
+    border-bottom: solid black;
+}
+
+#draft-law h1 {
+    font-size: 1.9rem !important;
+}
+
+#draft-law h2 {
+    font-size: 1.5rem !important;
+}
+
+#draft-law h3 {
+    font-size: 1.3rem !important;
+}
+
+#draft-law .level-A {
+
+}
+
+.level-ABC table, thead, th, td {
+    border: solid 1px;
+}
+
+ol.level-ABC {
+    list-style-type: upper-alpha;
+}
+
+ol.level-abc {
+    list-style-type: lower-alpha;
+}
+
+
+body {
+    counter-reset: my-counter;
+}
+
+ol.level-bracketed {
+    list-style-type: none;
+}
+
+
+ol.level-bracketed li::before {
+    font-weight: bold;
+    counter-increment: my-counter;
+    content: "[" counter(my-counter)"] ";
+}
+
+ol.roman-list {
+    list-style-type: lower-roman;
+}
+
+ol.roman-list > li::before {
+    content: none;
+}
+
+.level-bracketed-2 {
+    list-style-type: none;
+    counter-reset: my-counter2;
+    list-style-type: none;
+}
+
+ol.level-bracketed-2 > li::before {
+    font-weight: bold;
+    counter-increment: my-counter2;
+    content: "[" counter(my-counter2) "] ";
+}
+
+.level-bracketed-3 {
+    list-style-type: none;
+    counter-reset: my-counter3;
+    list-style-type: none;
+}
+
+ol.level-bracketed-3 > li::before {
+    font-weight: bold;
+    counter-increment: my-counter3;
+    content: "[" counter(my-counter3) "] ";
+}
