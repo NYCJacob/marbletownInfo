@@ -36,7 +36,7 @@ map.on('load', function () {
                 //         "#a15123"
                 //     ]
                 // }
-                "fill-opacity": .2
+                "fill-opacity": .1
             }
         }
     );
@@ -52,8 +52,8 @@ map.on('load', function () {
         });
 
         if (parcels.length > 0) {
-            document.getElementById('pd').innerHTML = '<p><strong>' + parcels[0].properties.ADDRESS_NU + ' ' +  parcels[0].properties.ADDRESS_NA + '</strong></p><p><strong><em>' + " has "
-                + parcels[0].properties.ACRES + '</strong> acres</em></p><br> Zoned ' + parcels[0].properties.ZONING;
+            document.getElementById('pd').innerHTML = '<p><strong>' + parcels[0].properties.ADDRESS_NU + ' ' +  parcels[0].properties.ADDRESS_NA + '</strong></p><p><strong><em>'
+                + parcels[0].properties.ACRES + '</strong> acres</em></p>Zoned ' + parcels[0].properties.ZONING;
         } else {
             document.getElementById('pd').innerHTML = '<p>Hover over a parcel!</p>';
         }

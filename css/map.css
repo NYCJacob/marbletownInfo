@@ -18,7 +18,8 @@
 .map-overlay {
     position: absolute;
     top: 30vh;
-    height: 20vh;
+    /*height: 20vh;*/
+    min-height: 10vh;
     background: rgba(255, 255, 255, 0.8);
     margin-right: 0px;
     font-family: Arial, sans-serif;
@@ -38,6 +39,7 @@
     width: 20vw;
     float: right;
 }
+
 
 #legend {
     padding: .2rem;
