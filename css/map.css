@@ -15,6 +15,11 @@
 * Set rules for how the map overlays
 * (info box and legend) will be displayed
 * on the page. */
+#overlay {
+    float: right;
+    margin-right: 21vw;
+}
+
 .map-overlay {
     position: absolute;
     top: 30vh;
@@ -27,11 +32,6 @@
     border-radius: 3px;
 }
 
-#overlay {
-    float: right;
-    margin-right: 21vw;
-}
-
 #features {
     top: 0;
     /*height: 100px;*/
@@ -41,25 +41,26 @@
     margin-bottom: 1em;
 }
 
+#legend-overlay {
+    float: left;
+    position: absolute;
+    top: 5vh;
+    margin-left: .1vw;
+    /*min-height: 10vh;*/
+    background: rgba(255, 255, 255, 0.9);
+    font-family: Arial, sans-serif;
+    overflow: auto;
+    border-radius: 3px;
+}
 
-#legend {
+
+#acres-legend {
+    top: 0;
     padding: .2rem;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     line-height: 16px;
-    /*height: 150px;*/
-    margin-bottom: 40px;
-    width: 100px;
-    font-size: .7rem;
+    width: 10vw;
 }
-
-/*.legend-key {*/
-    /*display: inline-block;*/
-    /*border-radius: 20%;*/
-    /*width: 10px;*/
-    /*height: 10px;*/
-    /*margin-right: 5px;*/
-/*}*/
-
 
 
 .zone-legend {
@@ -108,5 +109,22 @@
 
 .SR {
     background-color: #c48f72
+
+}
+
+.under10 {
+    background-color: #ffffff;
+}
+
+.over10 {
+    background-color: #f0f0f0;
+}
+
+.over25 {
+    background-color: #bdbdbd;
+
+}
+.over100 {
+    background-color: #636363;
 
 }
