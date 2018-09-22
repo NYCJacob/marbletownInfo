@@ -1,49 +1,73 @@
 <section class="container-fluid petition-body">
     <aside>
-        <h1>PETITION</h1>
-        <h3>No Commercial Events in Residence Zones</h3>
-        <p>We the citizens of the Town of Marbletown urge you to:</p>
-        <p>Protect Marbletown's current zoning laws.  Keep commerical events (weddings, festivals, and concerts) out of residential areas.</p>
+        <h1 class="text-center">PETITION</h1>
+        <h3 class="text-center">No Commercial Events in Residence Zones</h3>
+        <br>
+        <h4>We the citizens of the Town of Marbletown urge you to:</h4>
+        <h4><strong>Protect Marbletown's current zoning laws.  Keep commerical events (weddings, festivals, and concerts) out of residential areas.</strong></h4>
+        <hr>
     </aside>
-    <form action="" method="post">
+    <form id="petition-form" class="needs-validation" novalidate>
         <!--first name-->
-        <div>
-            <label for="firstName">First Name</label>
-            <input type="text" id="firstName" name="first_name">
+        <div class="form-group row">
+                <label for="firstName" class="col-form-label col-sm-2">First Name (required)</label>
+                <div class="col-sm-10">
+                    <input type="text" id="firstName" name="first_name" class="form-control" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please enter first name.
+                    </div>
+                </div>
         </div>
+
         <!--last name-->
-        <div>
-            <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" name="last_name">
+        <div class="form-group row">
+                <label for="lastName" class="col-form-label col-sm-2">Last Name (required)</label>
+                <div class="col-sm-10">
+                    <input type="text" id="lastName" name="last_name" class="form-control" required>
+                    <div class="invalid-feedback">
+                        Please enter your last name.
+                    </div>
+                </div>
         </div>
-        <!--street address-->
-        <!--email optional-->
-        <div>
-            <label for="email" value="optional">E-mail</label>
-            <input type="email" id="email" name="e_mail">
+            <!--street address-->
+
+            <!--email optional-->
+        <div class="form-group row">
+            <label for="email" value="optional" class="col-form-label col-sm-2">E-mail (optional)</label>
+            <div class="col-sm-10">
+                <input type="email" id="email" name="e_mail" class="form-control">
+            </div>
         </div>
+
+
         <!--adult-->
-        <div>
-            <label for="adultConfirm">Check to confirm you over 18 years old?</label>
-            <input type="checkbox" id="adultConfirm" name="adult-confirm" value="yes">
+        <div class="form-check">
+            <input type="checkbox" id="adultConfirm" name="adult-confirm" value="yes" class="form-check-input" required>
+            <label for="adultConfirm" class="form-check-label">Check to confirm you over 18 years old?</label>
+
         </div>
         <!--acknowledge checkbox-->
-        <div>
-            <label for="acknowledgment">Check this box will act as your signature.</label>
-            <input type="checkbox" id="acknowledgment" name="acknowledgment" value="yes">
+        <div class="form-check">
+            <input type="checkbox" id="acknowledgeSign" name="acknowledgment" value="yes" class="form-check-input" required>
+            <label for="acknowledgeSign" class="form-check-label">Checking this box will act as your signature.</label>
         </div>
         <!--more info checkbox-->
-        <div>
-            <label for="acknowledgment">Check to recieve future update by email.</label>
-            <input type="checkbox" id="acknowledgment" name="acknowledgment" value="yes">
+        <div class="form-check">
+            <input type="checkbox" id="acknowledgeUpdate" name="acknowledgment" value="yes" class="form-check-input">
+            <label for="acknowledgeUpdate" class="form-check-label">Check to recieve future update by email.</label>
         </div>
         <!--caution-->
         <div>
-            <p>Please not you ip and location is being logged to help confirm your identity.</p>
+            <p><strong>Please note that your ip address and location is being logged to help confirm your identity.</strong></p>
         </div>
         <!--submit button-->
-        <div class="button">
-            <button type="submit">Send your message</button>
+        <div class="form-group row">
+            <div class="button">
+                <button type="submit">Submit petition!</button>
+            </div>
         </div>
     </form>
 

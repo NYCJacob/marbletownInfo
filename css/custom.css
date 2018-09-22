@@ -80,3 +80,8 @@
 #navBar {
     padding-bottom: 0;
 }
+
+.petition-body {
+    border-style: solid;
+    border-color: #80bdff;
+}
