@@ -72,6 +72,9 @@
                 <li class="nav-item">
                     <a class="nav-link" id="events-law" data-toggle="tab" href="#events" role="tab" aria-controls="contact" aria-selected="false">Event Law</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="sign-petition" data-toggle="tab" href="#petition" role="tab" aria-controls="contact" aria-selected="false">Sign Petition</a>
+                </li>
 
             </ul>
         </div>
@@ -82,19 +85,24 @@
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                     <div class="container zone-legend">
                         <div class="row">
-                            <div class="col-sm"><p>Zone borders</p></div>
+                            <div class="col-sm"><p><strong>Zone borders:</strong> hover over zone labels for description</p></div>
                         </div>
                         <div class="row">
-                            <div class="legend-key A2 col">A-2</div>
-                            <div class="legend-key A3 col">A-3</div>
-                            <div class="legend-key A4 col">A-4</div>
-                            <div class="legend-key B1 col">B-1</div>
-                            <div class="legend-key B2 col">B-2</div>
-                            <div class="legend-key R1 col">R-1</div>
-                            <div class="legend-key R3 col">R-3</div>
-                            <div class="legend-key SR col">SR</div>
-                            <div class="legend-key I1 col">I-1</div>
-                            <div class="legend-key IB col">I-B</div>
+                            <div class="legend-key A2 col" data-toggle="popover" data-placement="bottom" data-content="A-2 Residence District">A-2</div>
+                            <div class="legend-key A3 col" data-toggle="popover" data-placement="bottom" data-content="A-3 Residence District">A-3</div>
+                            <div class="legend-key A4 col" data-toggle="popover" data-placement="bottom" data-content="A-4 Residence District">A-4</div>
+                            <div class="legend-key B1 col" data-toggle="popover" data-placement="bottom" data-content="B-1 General Business District:
+                            permit the use of existing structures for business uses appropriate to the predominantly small lots in the district; to preserve
+                            the existing scale and character of the business area; and to reduce or prevent traffic congestion and safety hazards. New structures
+                            intended for business use are subject to more stringent development standards necessary to maintain traffic safety and avoid conflicts between new and existing structures and uses.">B-1</div>
+                            <div class="legend-key B2 col" data-toggle="popover" data-placement="bottom" data-content="B-2 Highway Business District: provide opportunities for low-density business development,
+                            particularly uses with a highway orientation, subject to development standards intended to promote traffic safety on a heavily traveled highway.">B-2</div>
+                            <div class="legend-key R1 col" data-toggle="popover" data-placement="bottom" data-content="R-1 Residence District">R-1</div>
+                            <div class="legend-key R3 col" data-toggle="popover" data-placement="bottom" data-content="R-3 Residence District">R-3</div>
+                            <div class="legend-key SR col" data-toggle="popover" data-placement="bottom" data-content="SR Special Residence District:  preserve the historic residential character of portions of Stone Ridge
+                            while permitting certain limited nonresidential uses in existing buildings and on vacant land, subject to careful controls to preserve the scale and character of the area.">SR</div>
+                            <div class="legend-key I1 col" data-toggle="popover" data-placement="bottom" data-content="I-1 Light Industrial District">I-1</div>
+                            <div class="legend-key IB col" data-toggle="popover" data-placement="bottom" data-content="Light Industrial District">I-B</div>
                         </div>
                     </div>
                     <div id='mapGL'></div>
@@ -161,6 +169,9 @@
 
                 </div>
                 <div class="tab-pane fade" id="events" role="tabpaneltabpanel" aria-labelledby="events-tab">
+
+                </div>
+                <div class="tab-pane fade" id="petition" role="tabpaneltabpanel" aria-labelledby="petition-tab">
 
                 </div>
             </div>

@@ -2,6 +2,7 @@ $(document).ready(function () {
     // $("#census").load("views/censusData.html");
     $("#tboard").load("views/townBoard.html");
     $("#events").load("views/eventsLaw.html");
+    $("#petition").load("views/petition.html");
 
     // reload embedded iframes
     $("#census-tab").on("click", function () {
@@ -15,5 +16,8 @@ $(document).ready(function () {
             $('#cr-embed-06000US3611145458-economics-income-household_distribution').attr('src', function(i, val) {return val;});
         }, 2000);
     });
+
+    // bootstrap popover init
+    $('[data-toggle="popover"]').popover({trigger: 'hover'});
 
 });

@@ -38,6 +38,7 @@
     margin-top: 5em;
     width: 20vw;
     float: right;
+    margin-bottom: 1em;
 }
 
 
@@ -90,21 +91,22 @@
 }
 
 .IB {
-    background-color: rgb(243, 243, 204)
+    background-color: #e5ccf3;
 }
 
 .I1 {
-    background-color: rgb(243, 243, 90)
+    background-color: #f3a65a;
 }
 
 .R1 {
-    background-color: rgb(196, 143, 114)
+    background-color: #f3f35a;
 }
 
 .R3 {
-
+    background-color:  #f3f3cc
 }
 
 .SR {
+    background-color: #c48f72
 
 }
