@@ -1,0 +1,17 @@
+{
+  "name": "MarbletownInfo/MarbletownInfo",
+  "description": "",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jacob Sherman",
+      "email": "jacob@jbsherman.com"
+    }
+  ],
+  "require": {
+    "mailgun/mailgun-php": "^2.6",
+    "php-http/curl-client": "^1.7",
+    "guzzlehttp/psr7": "^1.4"
+  }
+}
