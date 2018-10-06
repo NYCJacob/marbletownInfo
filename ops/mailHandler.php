@@ -19,14 +19,14 @@ $mgClient = new Mailgun($mgApiKey);
 $domain = "mg.marbletowninfo.org";
 
 
-$first_name = $_POST['first_name'];
-$last_name = $_POST['last_name'];
-$street = $_POST['street'];
-$city = $_POST['city'];
-$zipcode = $_POST['zipcode'];
-$email = $_POST['e_mail'];
-$adult = $_POST['adult_confirm'];
-$acknowledge = $_POST['acknowledgment'];
+$first_name = htmlentities(trim($_POST['first_name'], ENT_QUOTES, "UTF-8"));
+$last_name = htmlentities(trim($_POST['last_name']),ENT_QUOTES, "UTF-8");
+$street = htmlentities(trim($_POST['street']),ENT_QUOTES, "UTF-8");
+$city =htmlentities(trim($_POST['city']),ENT_QUOTES, "UTF-8");
+$zipcode = htmlentities(trim($_POST['zipcode']),ENT_QUOTES, "UTF-8");
+$email = htmlentities(trim($_POST['e_mail']),ENT_QUOTES, "UTF-8");
+$adult = htmlentities($_POST['adult_confirm'],ENT_QUOTES, "UTF-8");
+$acknowledge = htmlentities($_POST['acknowledgment'],ENT_QUOTES, "UTF-8");
 
 $messageText = "$first_name $last_name is over 18 [code $adult ] and signed by acknowledgement [code $acknowledge ] \n
 address: $street, $city  $zipcode \n

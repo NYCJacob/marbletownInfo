@@ -44,7 +44,7 @@
 #legend-overlay {
     float: left;
     position: absolute;
-    top: 5vh;
+    top: 6.5vh;
     margin-left: .1vw;
     /*min-height: 10vh;*/
     background: rgba(255, 255, 255, 0.9);
